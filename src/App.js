@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { useEffect, useState } from "react";
+import Users from './componets/Users';
 function App() {
+  const [users, SetUsers] = useState(null);
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(res => res.json())
+      .then(data => {
+        SetUsers(data.slice(0,8))
+      })
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="row el-element-overlay">
+        {users && users.map(user=><Users usr={user}/>)}
+      </div>
     </div>
   );
 }
