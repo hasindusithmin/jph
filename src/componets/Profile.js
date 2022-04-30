@@ -63,7 +63,7 @@ export default function Profile({ user }) {
                         <div className="col col-lg">
                             <div className="count-data text-center">
                                 <h6 className="count h2" data-to="150" data-speed="150">todo</h6>
-                                <button type="button" className="btn btn-light">CLICK</button>
+                                <button type="button" className="btn btn-light"onClick={()=>{window.location.href='/todo'}} >CLICK</button>
                             </div>
                         </div>
                         <div className="col col-lg">
