@@ -10,7 +10,7 @@ export default function Users({usr}) {
                     <div className="el-card-avatar el-overlay-1"> <img src={`https://bootdey.com/img/Content/avatar/avatar${usr.id}.png`} alt="user" />
                         <div className="el-overlay">
                             <ul className="list-style-none el-info">
-                                <li className="el-item" onClick={saveSession}><a className="btn default btn-outline image-popup-vertical-fit el-link" href="#"><i className="fa fa-search" aria-hidden="true"></i></a></li>                            </ul>
+                                <li className="el-item" onClick={saveSession}><a className="btn default btn-outline image-popup-vertical-fit el-link" href="/user"><i className="fa fa-search" aria-hidden="true"></i></a></li>                            </ul>
                         </div>
                     </div>
                     <div className="el-card-content">
