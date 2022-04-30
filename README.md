@@ -1,9 +1,9 @@
-## ReactJS 💙
+## I Love ReactJS 💙
 
 [jsonplaceholder](https://jsonplaceholder.typicode.com/) 👏
 
-##Vercel 🖤
+## thanks Vercel 🖤
 [vercel page](https://jph.vercel.app/) 
 
-##Bootdey 🤎
+## thanks Bootdey 🤎
 [bootdey](https://www.bootdey.com/)
