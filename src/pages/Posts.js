@@ -14,8 +14,8 @@ export default function Post() {
     }, [])
 
     return (
-        <div class="container">
-            <div class="row">
+        <div className="container">
+            <div className="row">
                 {posts && posts.map(post => <Posts key={post.id} post={post} />)}
             </div>
         </div>
