@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import Album from "../componets/Album";
 import '../css/Album.css'
 export default function Albums() {
-    const id = sessionStorage.getItem('id');
     const [albums, setAlbums] = useState(null);
     useEffect(() => {
+        const id = sessionStorage.getItem('id');
         fetch(`https://jsonplaceholder.typicode.com/albums?userId=${id}`)
             .then(res => res.json())
             .then(data => {
