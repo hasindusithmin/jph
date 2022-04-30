@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import Comment from "../componets/Comment";
+import "../css/Comment.css"
 export default function Comments() {
     const [comments, setComments] = useState(null);
     useEffect(() => {

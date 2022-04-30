@@ -4,6 +4,7 @@ import Detail from './pages/Detail';
 import Post from './pages/Posts';
 import Comments from './pages/Comments';
 import Todos from './pages/Todos';
+import Albums from './pages/Albums';
 function App() {
   return (
     <BrowserRouter>
@@ -13,6 +14,7 @@ function App() {
         <Route path="/post" element={<Post />} />
         <Route path="/comment" element={<Comments />} />
         <Route path="/todo" element={<Todos />} />
+        <Route path="/album" element={<Albums />} />
       </Routes>
     </BrowserRouter>
   );

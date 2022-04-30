@@ -1,4 +1,4 @@
-
+import '../css/Profile.css'
 import {useEffect,useState} from "react";
 import Profile from "../componets/Profile";
 export default function Detail() {

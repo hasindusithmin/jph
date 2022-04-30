@@ -1,6 +1,5 @@
 
 
-import '../css/Todo.css'
 
 export default function Todo({ todo }) {
 

@@ -1,6 +1,8 @@
 
 import {useEffect,useState} from "react"
 import Todo from "../componets/Todo";
+import '../css/Todo.css'
+
 export default function Todos() {
     const id = sessionStorage.getItem('id');
     const [todos,setTodos] = useState(null);

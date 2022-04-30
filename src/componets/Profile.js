@@ -1,4 +1,4 @@
-import '../css/Profile.css'
+
 
 export default function Profile({ user }) {
     const { id, name, phone, email, website, address, company } = user;
@@ -69,7 +69,7 @@ export default function Profile({ user }) {
                         <div className="col col-lg">
                             <div className="count-data text-center">
                                 <h6 className="count h2" data-to="850" data-speed="850">album</h6>
-                                <button type="button" className="btn btn-light">CLICK</button>
+                                <button type="button" className="btn btn-light" onClick={()=>{window.location.href='/album'}}>CLICK</button>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 
-import "../css/Comment.css"
+
 
 export default function Comment({ comment }) {
     const { name, email, body } = comment;
